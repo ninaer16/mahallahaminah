@@ -1,0 +1,143 @@
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans 3";
+  background-color: #DBE6E4;
+  color: #606060;
+}
+
+header {
+  padding: 0 45px 0 45px;
+    color: #606060;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(236, 236, 218);
+    background-image: url(images/bg.png);
+    height: 80px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.logo-container img {
+  max-height: 40px;
+  margin-right: 10px;
+
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  color: #606060;
+  font-weight: bolder;
+}
+
+.mrc h2 {
+  text-align: center;
+  color: #606060;
+  font-weight: bolder;
+}
+.nav a {
+  color: #606060;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease-out;
+}
+
+.nav a:hover {
+  color: #606060;
+  transform: rotate(6deg);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #606060;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #639dda;
+  /* Change the color on hover  */
+}
+
+* {
+  margin-left: 7px;
+  /* box-sizing: border-box; */
+}
+
+/*Styles for gallery section*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.column {
+  flex: 0 0 calc(33.33% - 10px);
+  /* Adjust the width to occupy the full available space */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 75px;
+}
+.column img{
+  border-radius: 10px;
+  width: 70%;
+}
+
+/* Styles for Contact Section */
+.contact-section {
+  background-color: #97aeb3;
+  padding: 50px;
+  text-align: center;
+  color: #000000;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-left{
+  flex: 1;
+  text-align: left;
+}
+
+.info-right {
+  flex: 1;
+  text-align: right;
+}
+
+.info-right a {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.info-right img {
+  margin-top: 20px;
+  max-width: 30px;
+
+}

@@ -1,0 +1,297 @@
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3";
+
+}
+
+header {
+    background-color: #f8eed4;
+    color: #606060;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.logo-container img {
+    max-height: 40px;
+    margin-right: 10px;
+
+}
+
+h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #606060;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #639dda;
+    /* Change the color on hover  */
+}
+
+.background-section {
+    background-image: url('images/aminah_bg.png');
+   
+    background-size: cover;
+    background-position: center;
+    color: #606060;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-section h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    font-family: "Source Sans 3";
+}
+
+.background-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    font-family: "Source Sans 3";
+}
+
+.background-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    font-family: "Source Sans 3";
+
+}
+
+.background-section p {
+    font-size: 1.2em;
+    line-height: 1.0;
+}
+
+/* Styles for Vision and Mission Section */
+.vision-mission-section {
+    background-color: #eaffff;
+    padding: 50px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mission-container,
+.vision-container {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.mission-container img,
+.vision-container img {
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+.vision-mission-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #606060
+}
+
+.vision-mission-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #606060;
+}
+
+/* Styles for History Section */
+.history-section {
+    background-color: #eaffff;
+    padding: 50px;
+    text-align: center;
+}
+
+.history-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.history-content {
+    text-align: left;
+    max-width: 400px;
+}
+
+.history-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.history-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #606060
+}
+
+.history-image img {
+    max-width: 500px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.history-content h5 {
+    font-size: 30px;
+    color: #606060
+}
+
+.map-section {
+    background-color: #eaffff;
+    padding: 50px;
+    text-align: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.map-image img {
+    max-width: 500px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.google-maps {
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+    margin-left: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Styles for Gallery Section */
+.gallery-section {
+    background-color: #eaffff;
+    padding: 50px;
+    text-align: center;
+    color: #606060;
+}
+
+.gallery-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.gallery-item {
+    text-align: center;
+    max-width: calc(50% - 10px);
+    /*  the width of each item (2 items) with spacing */
+}
+
+.gallery-item.centered {
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    margin: 10px 0 0;
+
+}
+
+/* Styles for Contact Section */
+.contact-section {
+    background-color: #97aeb3;
+    padding: 50px;
+    text-align: center;
+    color: #000000;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-left,
+.info-right {
+    flex: 1;
+    text-align: left;
+}
+
+.info-right a {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.info-right img {
+    margin-top: 20px;
+    max-width: 30px;
+
+}
+
+/* Styles for Scroll to Top Button */
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2299c5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #338787;
+}
