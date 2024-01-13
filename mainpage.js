@@ -21,3 +21,10 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+
+function submitForm() { 
+    //this function used in online reporting page
+    // Directly submit the form
+    document.getElementById("reportForm").submit();
+    alert("Thank you! Your report has been successfully submitted.");
+  }
