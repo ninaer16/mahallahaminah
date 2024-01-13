@@ -1,0 +1,162 @@
+header {
+      padding: 0 45px 0 45px;
+      color: #606060;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(236, 236, 218);
+      background-image: url(images\bg.png);
+      height: 80px;
+  }
+
+  body {
+    background-color: #DBE6E4;
+
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .logo-container img {
+    max-height: 40px;
+    margin-right: 10px;
+  
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .nav a {
+    color: #606060;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease-out;
+  }
+  
+  .nav a:hover {
+    color: #606060;
+    transform: rotate(6deg);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #606060;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #639dda;
+    /* Change the color on hover  */
+  }
+
+  /* Styles for Contact Section */
+.contact-section {
+    background-color: #97aeb3;
+    padding: 50px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info-left,
+  .info-right {
+      flex: 1;
+      text-align: left;
+  }
+  
+  .info-right a {
+    margin-left: 10px;
+    display: inline-block;
+  }
+  
+  .info-right img {
+    margin-top: 20px;
+    max-width: 30px;
+  
+  }
+  .reporting {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #606060;
+  } 
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 2px solid #338787;
+    box-sizing: border-box;
+  }
+ 
+  #submitBtn {
+    background-color: rgb(236, 236, 218);
+    color: #606060;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family:'Times New Roman', Times, serif;
+  }
+  #submitBtn:hover {
+    background-color: #97aeb3;
+  }
+
+  #head {
+    background-color: rgb(236, 236, 218) ;
+    color: #606060;
+    padding: 40px;
+    text-align: center; 
+  }
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2299c5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #338787;
+}

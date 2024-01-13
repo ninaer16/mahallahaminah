@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Reporting</title>
+    <link rel="stylesheet" href="online-reporting.css">
+    <script src="mainpage.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+          <img src="images/aminah_logo-removebg-preview.png" alt="Logo">
+          <h1>Mahallah Aminah</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" >Home</a></li>
+            <li><a href="#">Announcement</a></li>
+            <li><a href="#">Management</a></li>
+            <li><a href="#"class="on">Online Reporting</a></li>
+          </ul>
+        </nav>
+      </header> 
+
+      <section id="head">
+        <h1>Online Reporting</h1>
+        <p>Report incidents, feedback, or issues.</p>
+      </section>
+
+      <section class="reporting">
+        <h2>Report an Issue</h2>
+        <form id="reportForm">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="matricNumber">Matric Number:</label>
+            <input type="text" id="matricNumber" name="matricNumber" required>
+         
+
+          <label for="reportType">Type of Report:</label>
+          <input type="text" id="reportType" name="reportType" required>
+      
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" rows="4" required></textarea>
+      
+          <button type="button" onclick="submitForm()" id="submitBtn">Submit Report</button>
+
+        </form>
+      </section>
+
+      
+        <section class="contact-section">
+
+            <div class="contact-info">
+              <div class="info-left">
+                <h2>Contact Us</h2>
+                <p>MAHALLAH AMINAH</p>
+                <p>INTERNATIONAL ISLAMIC UNIVERSITY MALAYSIA</p>
+                <P>JALAN GOMBAK,53100 KUALA LUMPUR</P>
+                <P>MALAYSIA</P>
+                <p>Phone: 03 – 6421 5496 / 5497
+        
+        
+              </div>
+              <div class="info-right">
+                <h2>Connect With Us</h2>
+                <a href="https://www.facebook.com/mahallahaminah.iium.7/?mibextid=2JQ9oc" target="_blank" title="Facebook"><img
+                    src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/mahallahaminahiium/" target="_blank" title="Instagram"><img
+                    src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://r.search.yahoo.com/_ylt=Awr1TaueNKBlvDkasH3jPwx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1705026846/RO=10/RU=https%3a%2f%2ftwitter.com%2fMahallahAminah/RK=2/RS=hVvGQB5sF6UNaqm0x8B2cMHHiRw-"
+                  target="_blank" title="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+              </div>
+            </div>
+          </section>
+           
+      
+         <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
+      <script src="mainpage.js"></script>
+</body>
+</html>
