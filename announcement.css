@@ -1,183 +1,191 @@
-
-
 body {
-    background-color:#c2d9db;
-    margin: 0;
+  background-color: #c2d9db;
+  margin: 0;
 }
 
 
 header {
-    padding: 0 45px;
-    color: #606060;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(bg.png);
-    height: 180px;
+  padding: 10px 20px;
+  color: #606060;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(images/bg.png);
+  height: 80px;
+  position: fixed;
+  /*Fix header at the top*/
+  width: 100%;
+  top: 0;
 }
+
 .centered-info {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Verdana', bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Verdana', bold;
 }
+
 .centered-text {
-    text-align: center;
-    font-size: 3em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #606060;
 }
 
-.h2-text{
-    font-family: 'Verdana', bold;
-    font-size: 2em;
+.h2-text {
+  font-family: 'Verdana', bold;
+  font-size: 2em;
+  color: #606060;
 }
 
-  .logo-container {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-  }
-  
-  .logo-container img {
-    max-height: 80px;  /* You can change this value to your desired size */
-    margin-right: 10px;
-    
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
 }
 
-    
-  
-  h1 {
-    margin: 0;
-  }
-  
-  .nav a {
-    color: #606060;
-    text-decoration: none;
-    display: block;
-    transition: all 0.3s ease-out;
-  }
-  
-  .nav a:hover {
-    color: #606060;
-    transform: rotate(6deg);
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #606060;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #639dda;
-    /* Change the color on hover  */
-  }
+.logo-container img {
+  max-height: 40px;
+  margin-right: 10px;
 
-  .latest-events {
-    padding: 50px;
-    text-align: center;
-    color: #000000;
-  }
+}
 
-  .upcoming-events {
-    padding: 10px;
-    text-align: center;
-    color: #000000;
-  }
 
-  .important-notice {
-    padding: 50px;
-    text-align: center;
-    color: #000000;
-  }
 
-  /* Styles for Contact Section */
+h1 {
+  margin: 0;
+  text-align: center;
+  color: #606060;
+  font-weight: bolder;
+}
+
+.nav a {
+  color: #606060;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease-out;
+}
+
+.nav a:hover {
+  color: #606060;
+  transform: rotate(6deg);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #606060;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #639dda;
+  /* Change the color on hover  */
+}
+
+.latest-events {
+  padding: 50px;
+  text-align: center;
+  color: #000000;
+}
+
+.upcoming-events {
+  padding: 10px;
+  text-align: center;
+  color: #000000;
+}
+
+.important-notice {
+  padding: 50px;
+  text-align: center;
+  color: #000000;
+}
+
+/* Styles for Contact Section */
 .contact-section {
-    background-color:#97aeb3;
-    padding: 50px;
-    text-align: center;
-    color: #000000;
-  }
-  
-  .contact-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .contact-info {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .info-left{
-    flex: 1;
-    text-align: left;
-  }
-  
-  .info-right {
-    flex: 1;
-    text-align: right;
-    
-  }
-  
-  .info-right a {
-    margin-left: 10px;
-    display: inline-block;
-  }
-  
-  .info-right img {
-    margin-top: 20px;
-    max-width: 30px;
-    
-  }
-    .slider {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        margin-top: 50px;
-    }
+  background-color: #97aeb3;
+  padding: 50px;
+  text-align: center;
+  color: #000000;
+}
 
-    .arrow {
-        position: absolute;
-        top: 90%;
-        transform: translateY(-30%);
-        font-size: 4em;
-        color: #000000;
-        cursor: pointer;
-    }
-    
-    .left-arrow {
-        left: 10px;
-    }
-    
-    .right-arrow {
-        right: 10px;
-    }
-    
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
-    .slides {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-    }
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
 
-    .slide {
-        min-width: 100%;
-    }
-  
-   
+.info-left {
+  flex: 1;
+  text-align: left;
+}
+
+.info-right {
+  flex: 1;
+  text-align: right;
+
+}
+
+.info-right a {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.info-right img {
+  margin-top: 20px;
+  max-width: 30px;
+
+}
+
+.slider {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: 50px;
+}
+
+.arrow {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-30%);
+  font-size: 4em;
+  color: #000000;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
