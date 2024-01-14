@@ -6,49 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mahallah Aminah</title>
   <link rel="stylesheet" href="announcement.css">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    .column {
-      float: left;
-      width: 50%;
-      padding: 5px;
-    }
-
-    /* Clearfix (clear floats) */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    /* Styles for Scroll to Top Button */
-    #scrollToTopBtn {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #2299c5;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 15px;
-      cursor: pointer;
-      transition: background-color 0.3 ease;
-    }
-
-    #scrollToTopBtn:hover {
-      background-color: #338787;
-    }
-  </style>
+ 
+ 
 </head>
-</head>
+
 
 
 <body>
+ 
   <header>
     <div class="logo-container">
       <img src="images/aminah_logo-removebg-preview.png" alt="Logo">
@@ -198,58 +163,7 @@
 
 
   <!-- Add your JavaScript for slider functionality -->
-  <script>
-    const slider = document.querySelector('.slider');
-    const slides = document.querySelector('.slides');
-    const slideWidth = document.querySelector('.slide').clientWidth;
-
-    function nextSlide() {
-      slides.style.transition = "transform 0.5s ease-in-out";
-      slides.style.transform = 'translateX(' + (-slideWidth) + 'px)';
-      setTimeout(() => {
-        slides.appendChild(slides.firstElementChild);
-        slides.style.transition = "none";
-        slides.style.transform = 'translateX(0)';
-      }, 500);
-    }
-
-    function prevSlide() {
-      slides.style.transition = "transform 0.5s ease-in-out";
-      slides.style.transform = 'translateX(' + slideWidth + 'px)';
-      setTimeout(() => {
-        slides.prepend(slides.lastElementChild);
-        slides.style.transition = "none";
-        slides.style.transform = 'translateX(0)';
-      }, 500);
-    }
-
-    setInterval(nextSlide, 3000); // Auto slide every 3 seconds
-
-
-    var scrollToTopButton = document.getElementById("scrollToTopBtn");
-
-    //button will show when user scroll 20px down
-    window.onscroll = function () {
-      scrollFunction();
-    };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopButton.style.display = "block";
-      } else {
-        scrollToTopButton.style.display = "none";
-      }
-    }
-
-    function scrollToTop() {
-      // Scroll to top with smooth animation
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }
-
-  </script>
+  <script src="announcement.js"></script>
 </body>
 
 </html>
