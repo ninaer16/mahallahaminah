@@ -13,9 +13,9 @@ header {
   background-image: url(images/bg.png);
   height: 80px;
   position: fixed;
-  /*Fix header at the top*/
   width: 100%;
   top: 0;
+  z-index: 1000;
 }
 
 .centered-info {
@@ -140,7 +140,7 @@ nav ul li a:hover {
 
 .info-right {
   flex: 1;
-  text-align: right;
+  text-align: left;
 
 }
 
@@ -188,4 +188,39 @@ nav ul li a:hover {
 
 .slide {
   min-width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Styles for Scroll to Top Button */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2299c5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #338787;
 }
