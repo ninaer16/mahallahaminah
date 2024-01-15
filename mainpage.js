@@ -27,4 +27,7 @@ function submitForm() {
     // Directly submit the form
     document.getElementById("reportForm").submit();
     alert("Thank you! Your report has been successfully submitted.");
+
+      window.location.href = window.location.href;
+
   }
